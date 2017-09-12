@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.chengxiang.pay.activity.AddBankCardActivity">
+
+    <include layout="@layout/action_bar" />
+
+    <TextView
+        style="@style/text_theme_15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/bind_hint" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:divider="@color/colorDividers"
+        android:orientation="vertical"
+        android:showDividers="end">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/text_black_15dp"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:gravity="center_vertical|right"
+                android:text="@string/real_name" />
+
+            <TextView
+                android:id="@+id/add_bank_card_true_name_tv"
+                style="@style/text_black_15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/real_name_hint"
+                android:maxLines="1" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_marginLeft="15dp"
+            android:background="@color/colorDividers" />
+
+        <LinearLayout
+            android:id="@+id/my_info_bank_name_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minHeight="44dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/text_black_15dp"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:gravity="center_vertical|right"
+                android:text="@string/own_bank" />
+
+            <EditText
+                android:id="@+id/add_bank_card_bank_name_et"
+                style="@style/text_black_15dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/credit_card_bank"
+                android:imeOptions="actionNext"
+                android:maxLines="1" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_marginLeft="15dp"
+            android:background="@color/colorDividers" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/text_black_15dp"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:gravity="center_vertical|right"
+                android:text="@string/credit_card_number" />
+
+            <com.chengxiang.pay.framework.custom.CustomEditText
+                android:id="@+id/add_bank_card_credit_card_cet"
+                style="@style/text_black_15dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/credit_card_number_hint"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLines="1"
+                app:editType="numberBankCard" />
+
+            <ImageView
+                android:id="@+id/add_bank_card_credit_card_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:src="@mipmap/ic_user_info_photograph" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_marginLeft="15dp"
+            android:background="@color/colorDividers" />
+
+        <LinearLayout
+            android:id="@+id/my_info_bank_phone_ll"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/text_black_15dp"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:gravity="center_vertical|right"
+                android:text="@string/phone_number" />
+
+            <com.chengxiang.pay.framework.custom.CustomEditText
+                android:id="@+id/add_bank_card_phone_cet"
+                style="@style/text_black_15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:hint="@string/credit_card_bank_phone_number"
+                android:imeOptions="actionNext"
+                android:inputType="phone"
+                android:maxLines="1"
+                app:editType="numberPhone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/add_bank_card_submit_bt"
+        style="@style/text_white_18dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="40dp"
+        android:background="@drawable/selector_button_theme_8"
+        android:text="@string/success" />
+
+
+</LinearLayout>

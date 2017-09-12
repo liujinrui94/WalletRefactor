@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <RadioGroup
+        android:id="@+id/fragment_these_month_profit_rgs"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_white_background_stroke_8"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/profit_all"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_top_pressed_left_background"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/all"
+            android:textColor="@drawable/select_black_white_text_color"
+            android:textSize="15dp"
+            tools:ignore="SpUsage" />
+
+        <RadioButton
+            android:id="@+id/profit_trade"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_top_pressed_middle_background"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/trading_profit"
+            android:textColor="@drawable/select_black_white_text_color"
+            android:textSize="15dp"
+            tools:ignore="SpUsage" />
+
+        <RadioButton
+            android:id="@+id/profit_up"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_top_pressed_right_background"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/upgrade_profit"
+            android:textColor="@drawable/select_black_white_text_color"
+            android:textSize="15dp"
+            tools:ignore="SpUsage" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/fragment_these_month_profit_fl"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

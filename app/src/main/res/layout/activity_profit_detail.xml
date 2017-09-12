@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/action_bar" />
+
+    <RelativeLayout
+        android:id="@+id/activity_profit_detail_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whiteTextColor">
+
+        <TextView
+            android:id="@+id/line_tv"
+            android:layout_width="1.5px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:background="@color/colorDividers" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/activity_profit_detail_rlv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="20dp"
+            android:divider="@null"
+            android:listSelector="@null">
+
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/activity_profit_detail_upgrade_btn"
+        style="@style/text_white_18dp"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/selector_button_theme_8"
+        android:text="@string/want_upgrade" />
+
+</LinearLayout>

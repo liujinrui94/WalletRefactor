@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/ic_fragment_mine_top"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/mine_level_name_tv"
+            style="@style/text_white_15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_translucence_background"
+            android:drawableLeft="@mipmap/ic_mine_level"
+            android:drawablePadding="3dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="5dp"
+            android:text="@string/staff" />
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/mine_my_head_iv"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/ic_fragment_mine_head" />
+
+    <TextView
+        android:id="@+id/mine_user_id_tv"
+        style="@style/text_white_15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@mipmap/ic_mine_my_phone"
+        android:text="@string/phone_188888888" />
+
+    <TextView
+        android:id="@+id/mine_referee_tv"
+        style="@style/text_white_15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="13dp"
+        android:drawableLeft="@mipmap/ic_mine_referrer"
+        android:text="@string/referee_18888888888" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom"
+        android:background="@color/translucence"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/mine_wechat_fee_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="13dp"
+            tools:ignore="SpUsage" />
+
+        <TextView
+            android:layout_width="1.0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/translucence70" />
+
+        <TextView
+            android:id="@+id/mine_ali_fee_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="13dp"
+            tools:ignore="SpUsage" />
+
+        <TextView
+            android:layout_width="1.0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/translucence70" />
+
+        <TextView
+            android:id="@+id/mine_union_fee_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="13dp"
+            tools:ignore="SpUsage" />
+
+        <TextView
+            android:layout_width="1.0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/translucence70" />
+
+        <TextView
+            android:id="@+id/mine_solid_code_fee_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="13dp"
+            tools:ignore="SpUsage" />
+    </LinearLayout>
+</LinearLayout>

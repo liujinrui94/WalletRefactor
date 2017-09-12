@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.chengxiang.pay">
+
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera2.full" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <application
+        android:name=".framework.base.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- 首次进入引导页 -->
+        <activity
+            android:name=".activity.GuideActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashActivityTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 欢迎页 -->
+        <activity
+            android:name=".activity.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashActivityTheme" />
+        <!-- 登录页面 -->
+        <activity
+            android:name=".activity.LoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <!-- 注册 -->
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <!-- 用户注册协议 -->
+        <activity
+            android:name=".activity.UserAgreementActivity"
+            android:screenOrientation="portrait" />
+        <!-- 用户签名 -->
+        <activity
+            android:name=".activity.UserSignActivity"
+            android:screenOrientation="landscape" />
+        <!-- 忘记密码 -->
+        <activity
+            android:name=".activity.ForgetPasswordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <!-- 主页 -->
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="portrait" />
+        <!-- 收款 -->
+        <activity
+            android:name=".activity.ReceiveActivity"
+            android:screenOrientation="portrait" />
+        <!-- 修改银行卡信息 -->
+        <activity
+            android:name=".activity.ChangeBankCardActivity"
+            android:screenOrientation="portrait" />
+        <!-- 用户信息 -->
+        <activity
+            android:name=".activity.UserInfoActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <!-- 选择银行总行 -->
+        <activity
+            android:name=".activity.SelectHeadOfficeActivity"
+            android:screenOrientation="portrait" />
+        <!-- 选择银行所在省 -->
+        <activity
+            android:name=".activity.SelectProvinceActivity"
+            android:screenOrientation="portrait" />
+        <!-- 选择银行所在市 -->
+        <activity
+            android:name=".activity.SelectCityActivity"
+            android:screenOrientation="portrait" />
+        <!-- 选择支行 -->
+        <activity
+            android:name=".activity.SelectBranchActivity"
+            android:screenOrientation="portrait" />
+        <!-- 消息 -->
+        <activity
+            android:name=".activity.MessageActivity"
+            android:screenOrientation="portrait" />
+        <!-- 推广 -->
+        <activity
+            android:name=".activity.ExtensionActivity"
+            android:screenOrientation="portrait" />
+        <!-- 分享 -->
+        <activity
+            android:name=".activity.ShareActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/ShareActivityFromBottom" />
+        <!-- 我的客户，推广的人数 -->
+        <activity
+            android:name=".activity.ExtensionUserActivity"
+            android:screenOrientation="portrait" />
+        <!-- 联系我们 -->
+        <activity
+            android:name=".activity.ContactCustomerServiceActivity"
+            android:screenOrientation="portrait" />
+        <!-- 账单列表 -->
+        <activity
+            android:name=".activity.BillListActivity"
+            android:screenOrientation="portrait" />
+        <!-- 账单详情 -->
+        <activity
+            android:name=".activity.BillDetailActivity"
+            android:screenOrientation="portrait" />
+        <!-- 提现记录 -->
+        <activity
+            android:name=".activity.WithdrawCashRecordActivity"
+            android:screenOrientation="portrait" />
+        <!-- 提升用户等级 -->
+        <activity
+            android:name=".activity.UserUpgradeActivity"
+            android:screenOrientation="portrait" />
+        <!-- 用户提升等级方式 -->
+        <activity
+            android:name=".activity.UserUpgradeModeActivity"
+            android:screenOrientation="portrait" />
+        <!-- 付款码页面（升级付款、收款） -->
+        <activity
+            android:name=".activity.PaymentCodeActivity"
+            android:screenOrientation="portrait" />
+        <!-- 银联快捷收款 -->
+        <activity
+            android:name=".activity.UnionPayActivity"
+            android:screenOrientation="portrait" />
+        <!-- 银联快捷收款web -->
+        <activity
+            android:name=".activity.UnionWebActivity"
+            android:screenOrientation="portrait" />
+        <!-- 收益选择页 -->
+        <activity
+            android:name=".activity.ProfitTabActivity"
+            android:screenOrientation="portrait" />
+        <!-- 更多服务网页版 -->
+        <activity
+            android:name=".activity.MoreServiceActivity"
+            android:screenOrientation="portrait" />
+        <!-- 信用卡申请 -->
+        <activity
+            android:name=".activity.CreditApplyActivity"
+            android:screenOrientation="portrait" />
+        <!-- 正在开发中界面 -->
+        <activity
+            android:name=".activity.DevelopingActivity"
+            android:screenOrientation="portrait" />
+        <!-- 设置页面 -->
+        <activity
+            android:name=".activity.SettingActivity"
+            android:screenOrientation="portrait" />
+        <!-- 产品说明 -->
+        <activity
+            android:name=".activity.DescriptionActivity"
+            android:screenOrientation="portrait" />
+        <!-- 收益详情 -->
+        <activity
+            android:name=".activity.ProfitDetailActivity"
+            android:screenOrientation="portrait" />
+        <!-- 添加银行卡 -->
+        <activity
+            android:name=".activity.AddBankCardActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <!--收款成功返回-->
+        <activity
+            android:name=".activity.GatheringResultActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" />
+        <!-- 微信请求返回处理页 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:label="@string/app_name" />
+        <!-- 支付宝请求返回处理页 -->
+        <activity
+            android:name=".apshare.ShareEntryActivity"
+            android:exported="true" />
+        <!-- 百度OCR拍照页面 -->
+        <activity
+            android:name=".baiduocr.ui.camera.CameraActivity"
+            android:screenOrientation="portrait" />
+        <!-- ############ QQ空间和QQ SSO授权的Activity注册 ############ -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1106232197" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- 极光推送广播接收器 -->
+        <receiver
+            android:name=".receiver.MyReceiver"
+            android:enabled="true"
+            tools:ignore="ExportedReceiver">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_CLICK_ACTION" />
+                <action android:name="cn.jpush.android.intent.CONNECTION" />
+
+                <category android:name="com.chengxiang.pay" />
+            </intent-filter>
+        </receiver>
+
+        <!--解决android7.0升级问题-->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.chengxiang.pay.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+    </application>
+</manifest>

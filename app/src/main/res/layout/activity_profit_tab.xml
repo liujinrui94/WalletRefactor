@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/action_bar" />
+
+    <FrameLayout
+        android:id="@+id/tab_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RadioGroup
+        android:id="@+id/main_radio"
+        android:layout_width="fill_parent"
+        android:layout_height="53dp"
+        android:layout_gravity="bottom"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/profit_account_balance_rb"
+            style="@style/MyTabButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="@string/tab_profit_account_balance"
+            android:textColor="@drawable/selector_tab_menu_text_color" />
+
+        <RadioButton
+            android:id="@+id/profit_cumulative_development_rb"
+            style="@style/MyTabButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/tab_profit_cumulative_development"
+            android:textColor="@drawable/selector_tab_menu_text_color" />
+
+        <RadioButton
+            android:id="@+id/profit_month_income_rb"
+            style="@style/MyTabButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/tab_profit_month_income"
+            android:textColor="@drawable/selector_tab_menu_text_color" />
+
+        <RadioButton
+            android:id="@+id/profit_improve_earnings_rb"
+            style="@style/MyTabButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/tab_profit_improve_earnings"
+            android:textColor="@drawable/selector_tab_menu_text_color" />
+    </RadioGroup>
+</LinearLayout>

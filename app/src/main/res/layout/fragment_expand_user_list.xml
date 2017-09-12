@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.chengxiang.pay.framework.custom.refreshlayout.SmartRefreshLayout
+        android:id="@+id/fragment_expand_userList_smartRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.chengxiang.pay.framework.custom.refreshlayout.header.ClassicsHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srlClassicsSpinnerStyle="FixedBehind"
+            app:srlDrawableMarginRight="20dp"
+            app:srlEnableLastTime="false"
+            app:srlFinishDelay="500"
+            app:srlTextSizeTime="10dp"
+            app:srlTextTimeMarginTop="2dp" />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/fragment_expand_userList_rlv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:background="@android:color/white"
+            tools:listitem="@android:layout/simple_list_item_2" />
+
+        <com.chengxiang.pay.framework.custom.refreshlayout.footer.ClassicsFooter
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.chengxiang.pay.framework.custom.refreshlayout.SmartRefreshLayout>
+
+
+    <TextView
+        android:id="@+id/no_data_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/no_data"
+        style="@style/text_gray_24dp"
+        android:visibility="gone" />
+
+</LinearLayout>

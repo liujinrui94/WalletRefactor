@@ -1,0 +1,125 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.chengxiang.pay.fragment.UserInfoPhotoDataFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            style="@style/text_black_15dp"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="30dp"
+            android:drawableLeft="@mipmap/ic_user_info_smile"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/photo_request" />
+
+        <TextView
+            android:id="@+id/user_info_photo_hint1_tv"
+            style="@style/text_black_15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/id_card_require" />
+
+        <TextView
+            android:id="@+id/user_info_photo_hint2_tv"
+            style="@style/text_black_15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/id_card_bank_require" />
+
+        <TextView
+            android:id="@+id/user_info_photo_hint3_tv"
+            style="@style/text_black_15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/take_photo_require" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="106dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:layout_marginTop="15dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/ic_user_info_photo_tips" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:layout_marginTop="15dp"
+            android:background="@mipmap/ic_user_info_card_face">
+
+            <ImageView
+                android:id="@+id/user_info_upload_face_iv"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_user_info_upload_photo" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:layout_marginTop="15dp"
+            android:background="@mipmap/ic_user_info_card_back">
+
+            <ImageView
+                android:id="@+id/user_info_upload_back_iv"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_user_info_upload_photo" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:layout_marginTop="15dp"
+            android:background="@mipmap/ic_user_info_card_hand">
+
+            <ImageView
+                android:id="@+id/user_info_upload_hand_iv"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_user_info_upload_photo" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/mine_data_btn_upload"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginRight="26dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/selector_button_theme_8"
+            android:text="@string/upload"
+            style="@style/text_white_18dp" />
+
+    </LinearLayout>
+
+</ScrollView>

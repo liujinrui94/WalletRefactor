@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/themeColorDark">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="@string/choice"
+            android:textColor="@color/whiteTextColor" />
+
+        <TextView
+            android:id="@+id/popup_union_add_bank_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="11dp"
+            android:text="@string/add"
+            android:textColor="@color/whiteTextColor" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/popup_union_bank_card_lv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8">
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/popup_union_cancel_tv"
+        style="@style/text_white_18dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/themeColorDark"
+        android:gravity="center"
+        android:text="@string/cancel" />
+</LinearLayout>

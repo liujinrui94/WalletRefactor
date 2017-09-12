@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--主题颜色深-->
+    <color name="themeColorDark">#d94c41</color>
+    <!--主题颜色浅-->
+    <color name="themeColor">#D55132</color>
+    <!--主题颜色浅-->
+    <color name="orangeRedColor">#d53c41</color>
+    <!--背景色-->
+    <color name="backgroundColor">#F5F5F5</color>
+    <!--深橘色-->
+    <color name="darkOrangeColor">#FD950A</color>
+    <!--黑色字体-->
+    <color name="blackTextColor">#323232</color>
+    <!--灰色字体-->
+    <color name="grayTextColor">#909090</color>
+    <!--白色字体-->
+    <color name="whiteTextColor">#FAFAFA</color>
+    <!--默认字体黑灰色-->
+    <color name="commonBlackGrayTextColor">#666666</color>
+    <!--默认间隔线-->
+    <color name="colorDividers">#E8E8E8</color>
+    <!--透明主题-->
+    <color name="transparent">#00000000</color>
+    <color name="transparentClicked">#0D000000</color>
+    <!--我的页面半透明-->
+    <color name="translucence">#50000000</color>
+    <color name="translucence70">#70000000</color>
+</resources>

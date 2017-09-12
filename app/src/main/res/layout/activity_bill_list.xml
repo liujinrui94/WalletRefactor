@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.chengxiang.pay.activity.BillListActivity">
+
+    <include layout="@layout/action_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@android:color/white"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/bill_list_date_ll"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground">
+
+            <TextView
+                android:id="@+id/bill_list_date_tv"
+                style="@style/text_gray_15dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/data"
+                tools:ignore="NestedWeights" />
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="12dp"
+                android:src="@mipmap/ic_arrow_right" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/bill_list_state_ll"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground">
+
+            <TextView
+                android:id="@+id/bill_list_state_tv"
+                style="@style/text_gray_15dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/effective_transaction"
+                android:textColor="@color/grayTextColor"
+                tools:ignore="NestedWeights" />
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="12dp"
+                android:src="@mipmap/ic_arrow_right" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/bill_list_swipe"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/bill_list_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <TextView
+        android:id="@+id/bill_list_empty_tv"
+        style="@style/text_gray_13dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/no_data"
+        android:textColor="@color/grayTextColor"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/bill_list_total_amount_tv"
+        style="@style/text_black_13dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorDividers"
+        android:gravity="center"
+        android:text="@string/total_amount" />
+</LinearLayout>

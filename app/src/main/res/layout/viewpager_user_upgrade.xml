@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:layout_gravity="center_horizontal"
+    android:background="@mipmap/ic_user_upgrade_viewpager_bg"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/viewpager_level_describe_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/staff_upgrade_manager"
+        style="@style/text_white_15dp" />
+
+    <LinearLayout
+        android:id="@+id/viewpager_upgrade_condition_ll"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/viewpager_next_month_profit_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/next_month_profit"
+            style="@style/text_white_15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:text="@string/user_upgrade_choice"
+            style="@style/text_white_15dp" />
+
+        <TextView
+            android:id="@+id/viewpager_upgrade_condition1_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:text="@string/condition1"
+            style="@style/text_white_13dp" />
+
+        <TextView
+            android:id="@+id/viewpager_upgrade_condition2_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/condition2"
+            style="@style/text_white_13dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/viewpager_highest_rank_tv"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:gravity="center"
+        android:text="@string/highest_rank"
+        style="@style/text_white_20dp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/viewpager_is_upgrade_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableLeft="@android:color/white"
+            android:text="@string/upgrade"
+            style="@style/text_theme_18dp" />
+    </RelativeLayout>
+</LinearLayout>

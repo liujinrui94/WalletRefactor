@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/backgroundColor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0.1px"
+        android:background="@color/colorDividers"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="13dp">
+
+            <ImageView
+                android:id="@+id/item_grid_service_iv"
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:src="@mipmap/ic_wallet_bmjf" />
+
+            <TextView
+                android:id="@+id/item_grid_service_tv"
+                style="@style/text_gray_13dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/convenience_payment"
+                tools:ignore="SpUsage" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

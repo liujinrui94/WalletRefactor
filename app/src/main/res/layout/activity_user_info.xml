@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.chengxiang.pay.activity.UserInfoActivity">
+
+    <include layout="@layout/action_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/shape_white_background_stroke_8">
+
+        <TextView
+            android:id="@+id/user_info_bank_data_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_top_pressed_left_background"
+            android:gravity="center"
+            android:text="@string/bank_card_data"
+            android:textColor="@drawable/selector_text_color_theme_white"
+            android:textSize="15dp"
+            tools:ignore="SpUsage" />
+
+        <TextView
+            android:id="@+id/user_info_photo_data_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_top_pressed_right_background"
+            android:gravity="center"
+            android:text="@string/photo_data"
+            android:textColor="@drawable/selector_text_color_theme_white"
+            android:textSize="15dp"
+            tools:ignore="SpUsage" />
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/mine_data_fl_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+</LinearLayout>

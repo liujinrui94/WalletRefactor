@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_white_background_8"
+    android:minHeight="190dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/shape_theme_background_8">
+
+        <TextView
+            style="@style/text_white_18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="消息详情" />
+
+        <ImageView
+            android:id="@+id/dialog_message_close_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="13dp"
+            android:paddingRight="10dp"
+            android:src="@mipmap/ic_message_close" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/dialog_message_detail_tv"
+        style="@style/text_black_gray_15dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginRight="21dp"
+        android:layout_marginTop="18dp"
+        android:layout_weight="1"
+        android:text="@string/account_time" />
+
+    <TextView
+        android:id="@+id/dialog_message_date_tv"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:gravity="center"
+        android:text="@string/data" />
+    <TextView
+        android:id="@+id/dialog_message_time_tv"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginBottom="25dp"
+        android:gravity="center"
+        android:text="@string/data" />
+
+</LinearLayout>

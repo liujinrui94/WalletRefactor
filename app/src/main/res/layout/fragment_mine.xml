@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:orientation="vertical"
+    tools:context="com.chengxiang.pay.fragment.MineFragment">
+
+    <include layout="@layout/action_bar" />
+
+    <com.chengxiang.pay.framework.custom.refreshlayout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent"
+        app:srlHeaderMaxDragRate="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/themeColorDark"
+            app:srlSpinnerStyle="FixedBehind" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom|center"
+            android:textSize="16sp"
+            app:srlSpinnerStyle="FixedBehind" />
+    </com.chengxiang.pay.framework.custom.refreshlayout.SmartRefreshLayout>
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/colorDividers"
+                android:orientation="vertical"
+                android:showDividers="middle">
+
+                <include
+                    layout="@layout/mine_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <include
+                    layout="@layout/mine_middle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <include
+                    layout="@layout/mine_rate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <include
+                    layout="@layout/mine_description_of_products"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <include
+                    layout="@layout/mine_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/mine_safe_exit_btn"
+                    style="@style/text_white_18dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/selector_button_theme_8"
+                    android:text="@string/safe_exit" />
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

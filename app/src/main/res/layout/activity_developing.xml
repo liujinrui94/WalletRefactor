@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.chengxiang.pay.activity.DevelopingActivity">
+
+    <include layout="@layout/action_bar" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_developing" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="@string/chinese_develop"
+        android:textColor="@color/commonBlackGrayTextColor"
+        android:textSize="24dp"
+        tools:ignore="SpUsage" />
+
+    <TextView
+        style="@style/text_gray_15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/english_develop" />
+
+    <TextView
+        android:id="@+id/develop_back_tv"
+        style="@style/text_white_18dp"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/selector_button_theme_8"
+        android:gravity="center"
+        android:text="@string/back_one_type" />
+</LinearLayout>

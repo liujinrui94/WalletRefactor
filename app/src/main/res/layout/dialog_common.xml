@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="150dp"
+    android:background="@drawable/shape_white_background_5"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/common_dialog_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="@string/app_name"
+        style="@style/text_black_24dp" />
+
+    <TextView
+        android:id="@+id/common_dialog_detail_tv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="12dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text="@string/app_name"
+        style="@style/text_black_gray_15dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:background="@color/colorDividers" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/common_dialog_negate_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="@string/cancel"
+            style="@style/text_black_gray_18dp" />
+
+        <TextView
+            android:id="@+id/common_dialog_dividers_tv"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/colorDividers" />
+
+        <TextView
+            android:id="@+id/common_dialog_positive_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="@string/success"
+            style="@style/text_theme_18dp" />
+    </LinearLayout>
+
+
+</LinearLayout>
